@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start server": "npm run server"
+    "server": "npx json-server-auth http://jsonplaceholder.typicode.com/db"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^13.6.0",
+    "cypress": "^13.6.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "json-server": "^0.17.4",
     "json-server-auth": "^2.1.0"
   }
 }
