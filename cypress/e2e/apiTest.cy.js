@@ -131,7 +131,7 @@ describe('API test', () => {
 
     cy.request({
       method: 'PUT',
-      url: '/posts/200',
+      url: '/posts/1000',
       headers: {
         'Content-Type': 'application/json'
       },
@@ -245,10 +245,10 @@ describe('API test', () => {
             'Content-Type': 'application/json'
           }
         }).then(response => {
-    
+
           expect(response.status).to.eq(200);
           expect(response.body).to.empty;
-    
+
         })
 
       })
